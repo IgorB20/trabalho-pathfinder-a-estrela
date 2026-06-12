@@ -1,0 +1,20 @@
+{
+  "name": "trabalho-pathfinder-a-estrela",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "cenario-normal": "dot -Tsvg grafo_normal.dot -o grafo_normal.svg",
+    "cenario-congestionado": "dot -Tpng grafo_congestionado.dot -o grafo_congestionado.png",
+    "gerar-dot": "node index.js",
+    "gerar-png": "dot -Tpng grafo_normal.dot -o grafo_normal.png && dot -Tpng grafo_congestionado.dot -o grafo_congestionado.png",
+    "gerar-svg": "dot -Tsvg grafo_normal.dot -o grafo_normal.svg && dot -Tsvg grafo_congestionado.dot -o grafo_congestionado.svg",
+    "gerar-grafos": "npm run gerar-dot && npm run gerar-png && npm run gerar-svg",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "graphviz": "^0.0.9"
+  }
+}
